@@ -6,6 +6,9 @@ import About from '../src/PAGES/About'
 import  Home from '../src/PAGES/Home'
 import Error from '../src/PAGES/Error'
 import Singleproduct from '../src/PAGES/Singleproduct'
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   return <BrowserRouter>

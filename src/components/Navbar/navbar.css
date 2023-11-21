@@ -25,7 +25,8 @@ nav svg:hover{
     color: var(--col1);
 }
 nav img{
-    width: 150px;
+    width: 180px;
+    margin: auto   15px;
     
 }
 nav .searchbar{
