@@ -7,8 +7,11 @@ import './HomeCategories.css'
 
 const HomeCategories = () => {
   return (
-    <div className='home-categories'>
-        <h1>Shop by categories</h1>
+    
+        <>
+        <h1 className='text-center mt-5'>Shop by categories</h1>
+         <div className='home-categories'>
+        
         <div className='container'>
             <img src={img1} alt ='img1'/>
             <div className='content'>
@@ -39,6 +42,12 @@ const HomeCategories = () => {
         </div>
       
     </div>
+        </>
+   
+    
+    
+    
+    
   )
 }
 
