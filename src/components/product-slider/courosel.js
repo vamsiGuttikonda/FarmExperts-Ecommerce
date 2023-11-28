@@ -18,10 +18,7 @@ const ProductSlider = (props) => {
   return (
     <div className='container-fluid'>
       <h1 className='text-center my-5'>{props.heading}</h1>
-      <Carousel showDots={false} responsive={responsive} 
-      
-      
-      >
+      <Carousel showDots={false} responsive={responsive} >
         {product}
       </Carousel>
     </div>

@@ -9,6 +9,7 @@ import Singleproduct from '../src/PAGES/Singleproduct'
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ProductPage from './PAGES/ProductsPage'
 
 const App = () => {
   return <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => {
     <Route path="/"  element={<Home/>}/>
     <Route path='/*' element={<Error/>}/>
     <Route path='/about' element={<About/>}/>
+    <Route path='/products' element={<ProductPage/>}/>
 
   </Routes>
   </BrowserRouter>
