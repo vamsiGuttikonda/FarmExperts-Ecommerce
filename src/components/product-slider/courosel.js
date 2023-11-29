@@ -6,6 +6,7 @@ import CouroselIndividual from './couroselindividual';
 import { responsive, productData } from './productdata';
 
 const ProductSlider = (props) => {
+        // the above props is for heading 
   const product = productData.map((item) => (
     <CouroselIndividual
       name={item.name}

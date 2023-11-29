@@ -8,8 +8,8 @@ const CategoryList = ({ key,productname,subCategories }) => {
     <div className='categories-inner-subcategories-list'>
         <ul>
           {
-            subCategories.map((subcategory)=>(
-              <li>{subcategory}</li>
+            subCategories.map((subcategory,index)=>(
+              <li key={index}>{subcategory}</li>
             ))
           }
         </ul>
