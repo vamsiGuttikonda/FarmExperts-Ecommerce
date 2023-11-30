@@ -1,6 +1,11 @@
 nav{
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    
     padding: 10px;
     /* box-shadow: ; */
     box-shadow:0 0 10px 0 rgba(0,0,0,0.2);    
