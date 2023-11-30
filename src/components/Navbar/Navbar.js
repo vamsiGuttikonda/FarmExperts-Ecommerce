@@ -10,12 +10,15 @@ const Navbar = () => {
         
       <nav>
         <div className='section-1'>
-            <img src={logo}/>
+          <button className='hamMenu'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" className='ham' width="14" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
+            <img className='logo' src={logo}/>
             <div className='searchbar'>
                 <input type='text' placeholder='search for products'/>
                
             <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>
    
@@ -39,7 +42,58 @@ const Navbar = () => {
             </div>
            
         </div> 
-        <div className='section-2'>
+      <div className='section-2 pt-3'>
+        <div className='sideBar'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" className='cross' width="14" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        <div class="accordion accordion-flush sideBarElement" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Honey
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><a href='#'>abzs</a></div>
+      
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Products
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><a href='#'>abzs</a></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        New Arrivals
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><a href='#'>abzs</a></div>
+    </div>
+  </div>
+</div>
+
+            </div>
+
+        <div className='searchbar mx-auto'>
+                <input type='text' placeholder='search for products'/>
+               
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+   
+            </button>
+
+            </div>
+
+            <div className='dropdowns'>
             <Dropdown>
                 <Dropdown.Toggle variant="" id="dropdown-basic">
                     Categories
@@ -84,11 +138,33 @@ const Navbar = () => {
         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-    
+    </div>
             </div>
       </nav>
    
   )
 }
 
+
+const btn=document.querySelector('.hamMenu');
+const cross =document.querySelector('.cross')
+const sideBar=document.querySelector('.sideBar')
+
+//this method init() must be called to make hamburger usable
+
+// const init = function(){
+// btn.addEventListener('click',function(){
+
+// document.body.style.overflowY='hidden';
+// sideBar.classList.add('slide')
+// })
+
+// cross.addEventListener('click',function(){
+
+//   document.body.style.overflowY='auto';
+//   sideBar.classList.remove('slide')
+//   })
+// }
+
+// init()
 export default Navbar
