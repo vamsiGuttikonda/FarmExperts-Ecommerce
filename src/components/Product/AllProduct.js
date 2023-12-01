@@ -7,10 +7,10 @@ import IndividualProduct from './IndividualProduct'
 
 const AllProduct = () => {
   return (
-    <div className="col-md-9">
-      <div className='row'>
+    <div >
+      
       <IndividualProduct productData={productData}/>
-      </div>
+      
     </div>
   )
 }
