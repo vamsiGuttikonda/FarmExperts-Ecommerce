@@ -2,10 +2,13 @@ import {React,useState} from 'react'
 import CategorySIdebar from '../components/Product/CategorySIdebar'
 import { categories } from '../components/Product/categoryData'
 import AllProduct from '../components/Product/AllProduct'
-
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/footer'
 const Products = () => {
   
   return (
+    <div>
+      <Navbar/>
     <div className="container mt-5">
       <div className="row">
         {/* Category Sidebar on the left */}
@@ -19,7 +22,10 @@ const Products = () => {
         </div>
       </div>
     </div>
+    <Footer/>
 
+    </div>
+    
   )
 }
 

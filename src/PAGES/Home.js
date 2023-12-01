@@ -9,8 +9,8 @@ import ProductSlider from '../components/product-slider/courosel'
 
 const Home = () => {
   return (
-    <>
-    <Navbar></Navbar>
+    <div >
+      <Navbar></Navbar>
     
     <BannerSlider></BannerSlider>
     <HomeCategories></HomeCategories>
@@ -18,9 +18,7 @@ const Home = () => {
     <ProductSlider heading="New Arrivals"/>
     
     <Footer></Footer>
-
-    
-    </>
+    </div>
   ) 
 
   

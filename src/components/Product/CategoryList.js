@@ -1,9 +1,11 @@
 
 import React from 'react';
+import './categorysidebar.css'
+
 
 const CategoryList = ({ key,productname,subCategories }) => {
   return (
-   <div className=' dropdown categpries-inner-component'>
+   <div className='  categpries-inner-component'>
     <h2>{productname}</h2>
     <div className='categories-inner-subcategories-list'>
         <ul>

@@ -4,6 +4,10 @@ import Couroselindividual from '../product-slider/couroselindividual'
 
 
 const IndividualProduct = ({productData}) => {
+
+    const styleToAppearBig={
+      width:'400px'
+    }
   return (
     <div className='row'>
         {
@@ -14,6 +18,7 @@ const IndividualProduct = ({productData}) => {
             name={product.name}
             price={product.price}
             description={product.description}
+            customStyle={styleToAppearBig}
             
             />
           </div>

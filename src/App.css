@@ -7,10 +7,15 @@
   padding: 0;
   margin: 0;
   font-weight: 400;
+  
 }
+
 #dropdown-basic{
   margin: 0;
   padding: 0;
   outline: none;
   border: none;
+}
+body{
+  position: relative;
 }

@@ -7,7 +7,7 @@ import CategoryList from './CategoryList'
 const CategorySIdebar = ({categories}) => {
   
   return (
-    <div className='col-md-3 mt-5 '>
+    <div className='col-md-3  '>
       <h1>categories</h1>
       {
         categories.map((Category,index)=>(
