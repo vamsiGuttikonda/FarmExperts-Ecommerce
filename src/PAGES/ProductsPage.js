@@ -14,12 +14,12 @@ const Products = () => {
     <div className="container-fluid mt-5">
       <div className="row">
         {/* Category Sidebar on the left */}
-        <div className="col-md-2 categorysidebar-container">
+        <div className="col-2 categorysidebar-container">
           <CategorySIdebar categories={categories}/>
         </div>
 
         {/* Products on the right */}
-        <div className="col-md-10">
+        <div className="col-10">
           <AllProduct/>
         </div>
       </div>

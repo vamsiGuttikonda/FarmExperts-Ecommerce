@@ -146,25 +146,25 @@ const Navbar = () => {
 }
 
 
-const btn=document.querySelector('.hamMenu');
-const cross =document.querySelector('.cross')
-const sideBar=document.querySelector('.sideBar')
+// const btn=document.querySelector('.hamMenu');
+// const cross =document.querySelector('.cross')
+// const sideBar=document.querySelector('.sideBar')
 
 // this method init() must be called to make hamburger usable
 
-const init = function(){
-btn.addEventListener('click',function(){
+// const init = function(){
+// btn.addEventListener('click',function(){
 
-document.body.style.overflowY='hidden';
-sideBar.classList.add('slide')
-})
+// document.body.style.overflowY='hidden';
+// sideBar.classList.add('slide')
+// })
 
-cross.addEventListener('click',function(){
+// cross.addEventListener('click',function(){
 
-  document.body.style.overflowY='auto';
-  sideBar.classList.remove('slide')
-  })
-}
+//   document.body.style.overflowY='auto';
+//   sideBar.classList.remove('slide')
+//   })
+// }
 
-init()
+// init()
 export default Navbar

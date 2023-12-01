@@ -8,7 +8,7 @@ const IndividualProduct = ({productData}) => {
     <div className='row'>
         {
         productData.map((product) => (
-          <div key={product.id} className="col-md-3 mb-4 product-container">
+          <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 col-7 mb-4 product-container">
             <ProductCard
             imageurl={product.imageurl}
             name={product.name}
