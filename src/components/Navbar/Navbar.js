@@ -146,9 +146,9 @@ const Navbar = () => {
 }
 
 
-const btn=document.querySelector('.hamMenu');
-const cross =document.querySelector('.cross')
-const sideBar=document.querySelector('.sideBar')
+// const btn=document.querySelector('.hamMenu');
+// const cross =document.querySelector('.cross')
+// const sideBar=document.querySelector('.sideBar')
 
 //this method init() must be called to make hamburger usable
 
