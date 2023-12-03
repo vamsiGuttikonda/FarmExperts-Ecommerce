@@ -7,7 +7,7 @@ import IndividualProduct from './IndividualProduct'
 
 const AllProduct = () => {
   return (
-    <div >
+    <div>
       
       <IndividualProduct productData={productData}/>
       
