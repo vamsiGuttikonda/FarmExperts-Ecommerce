@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .border{
+            border:3px solid black
+        }
+        .max{
+            /* max-width: 50%; */
+            object-fit:scale-down;
+
+
+        }
+        .max img{
+            max-width:500px;
+            min-width: 100px;
+            object-fit:scale-down;
+        }
+        .abs{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+        }
+        button{
+            background: none;
+            border: none;
+        }
+        .sideBar{
+            position: absolute;
+            top: 0;
+            right:0;
+            transform: translateX(100%);
+            background-color: white;
+            width: 40%;
+            height: 100vh;
+            border: 2px solid red;
+            transition: transform 1s;
+
+        }
+        .sideBar ul,.sideBar ul li{
+            padding: 0;
+            margin-left: 0 !important;
+            max-width:100%;
+            object-fit:scale-down;
+        }
+        .slide{
+            transform: translateX(0);
+            transition: transform 1s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <h1>header</h1>
+        <button class="abs cart-btn">
+        <img width="30" height="30" src="https://img.icons8.com/office/16/shopping-cart.png" class="" alt="shopping-cart"/>
+        </button>
+    </nav>
+    <div>
+        
+    </div>
+    <div class="container-fluid border mt-3">
+        <div class="row">
+        <div class="img--container col-10 col-md-6 border max mx-auto">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class='object-fit-scale col-10' alt="">
+        </div>
+        <div class="details col-10 col-md-6 border pt-5 mx-auto">
+
+            <h1>Product name</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, officia.</p>
+                <label for="customRange2" class="form-label">Number of Products</label>
+                <input type="range" class="form-range" min="1" max="5" id="customRange2">
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Add to cart</button>
+                <button class="btn btn-outline-success" type="button">Buy now</button>
+              </div>
+
+
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid border mt-3">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum in, nihil atque sit quam alias obcaecati, reprehenderit beatae magni, vero numquam sed ea maxime aut ratione! Neque non reprehenderit numquam!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum in, nihil atque sit quam alias obcaecati, reprehenderit beatae magni, vero numquam sed ea maxime aut ratione! Neque non reprehenderit numquam!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum in, nihil atque sit quam alias obcaecati, reprehenderit beatae magni, vero numquam sed ea maxime aut ratione! Neque non reprehenderit numquam!</p>
+
+    </div>
+    <div class="container-fluid border mt-3">
+        <h1>Review & ratings</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum in, nihil atque sit quam alias obcaecati, reprehenderit beatae magni, vero numquam sed ea maxime aut ratione! Neque non reprehenderit numquam!</p>
+
+
+    </div>
+    <div class='sideBar slide'>
+        <button class='cross'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="30"  width="30" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </button>
+        <ul>
+            <li class="row border mt-2 ">
+                <img src="" alt="product pic " class="col-4">
+                <div class="col-8 border p-2">
+                    <h3>product name</h3>
+                    <p>quantity</p>
+                    <p>amount</p>
+                    <button class="btn btn-outline-danger" type="button">Remove from cart</button>
+
+                </div>
+            </li>
+            <li class="row border mt-2 ">
+                <img src="" alt="product pic " class="col-4">
+                <div class="col-8 border p-2">
+                    <h3>product name</h3>
+                    <p>quantity</p>
+                    <p>amount</p>
+                    <button class="btn btn-outline-danger" type="button">Remove from cart</button>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+        
+
+    
+</body>
+<script>
+const btn=document.querySelector('.cart-btn');
+const cross =document.querySelector('.cross')
+const sideBar=document.querySelector('.sideBar')
+
+
+btn.addEventListener('click',function(){
+
+document.body.style.overflowY='hidden';
+sideBar.classList.add('slide')
+})
+
+cross.addEventListener('click',function(){
+
+  document.body.style.overflowY='auto';
+  sideBar.classList.remove('slide')
+  })
+
+</script>
+</html>
