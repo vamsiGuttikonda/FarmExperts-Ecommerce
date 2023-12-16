@@ -27,3 +27,6 @@ a {
   text-decoration: none; /* Remove the underline */
   outline: none; /* Remove the default blue outline on focus */
 }
+svg{
+  cursor: pointer;
+}
