@@ -126,8 +126,10 @@ nav .cart .qty{
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     top: -15px;
     right: -15px;
+    font-size: 1rem;
 
 }
 .slide{
@@ -141,7 +143,9 @@ link{
 
 
 @media (max-width:768px){
-     
+    nav .cart .qty{
+    font-size: 1rem;
+    }
     nav .section-2 .dropdowns{
     display: none;
     }
