@@ -1,6 +1,9 @@
 :root{
   --col1:#7ED957;
   --col2:grey;
+  --main-color: #333;
+  --primary-color: #acacac;
+  --icon-color: #525252;
   
 }
 *{
@@ -18,4 +21,9 @@
 }
 body{
   position: relative;
+  
+}
+a {
+  text-decoration: none; /* Remove the underline */
+  outline: none; /* Remove the default blue outline on focus */
 }

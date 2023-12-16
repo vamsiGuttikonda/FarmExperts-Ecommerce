@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+.icon{
+
+    width: 2rem;
+    height: 2rem;
+    fill: yellow;
+    color: yellow;
+}
+.mainContainer{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(241,242, 242, 255);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    align-items: center;
+}
+.mainContainer .box{
+    background:#fff;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+.mainContainer .box:hover{
+    box-shadow: rgba(17, 12,46 ,0.15) 0px 48px 100px 0px;
+    transform: scale(1.1);
+}
+.mainContainer .card{
+    padding: 15px 15px 0;
+}
+.card .image{
+    width: 80%;
+    margin: 10px auto 25px;
+    position: relative;
+
+}
+
+.card .image img{
+    width: 180px;
+    transition: .3 ease-in-out;
+}
+.card .image img:hover{
+   transform: scale(1.1);
+}
+.card .desc {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.car .desc{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.card .desc p{
+    font-size: 14px;
+    margin: 10px 0 20px;
+
+}
+.card span{
+    font-size: 20px;
+
+}
+.card .star .icon{
+    font-size: 18px;
+    
+
+}
+.add-Button{
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color:var(--col1);
+}
+
+@media screen and (max-width:998px) {
+    .mainContainer{
+        padding: 0 3rem;
+
+    }
+    .card .image{
+        width: 90%;
+
+    }
+    
+}
+@media  screen and (max-width:800px) {
+    .mainContainer{
+        grid-template-columns: repeat(1,1fr);
+        padding: 5rem 3rem;
+    }
+    .card .desc{
+        width: 90%;
+    }
+    
+}
