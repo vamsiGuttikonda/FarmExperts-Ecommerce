@@ -3,7 +3,7 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CouroselIndividual from './couroselindividual';
-import { responsive, productData } from './productdata';
+import { responsive, productData } from '../Data/productdata';
 
 const ProductSlider = (props) => {
         // the above props is for heading 

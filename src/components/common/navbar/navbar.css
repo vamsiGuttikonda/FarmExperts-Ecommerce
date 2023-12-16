@@ -134,6 +134,10 @@ nav .cart .qty{
     transform: translateX(0%) !important;
     transition-duration: 1s;
 }
+link{
+    text-decoration: none; /* Remove the underline */
+    outline: none; /* Remove the default blue outline on focus */
+}
 
 
 @media (max-width:768px){

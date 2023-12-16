@@ -19,70 +19,87 @@ export const responsive = {
     },
   };
 
+
   export const productData = [
     {
       id: 1,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "Brown Honey",
-      price: "$19.99",
-      description: "Some text about the product..",
+      price: "19.99",
+      description: "Some text about the product about ",
+
+      rating:4
     },
     {
       id: 2,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "Red Honey",
-      price: "$21.99",
+      price: "21.99",
       description: "Some text about the product..",
+      rating:4
+
     },
     {
       id: 3,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "purple honey",
-      price: "$99.99",
+      price: "99.99",
       description: "Some text about the product..",
+      rating:4
+
     },
     {
       id: 4,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "black honey",
-      price: "$14.99",
+      price: "14.99",
       description: "Some text about the product..",
+      rating:4
+
     },
     {
       id: 5,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "white honey",
-      price: "$38.99",
+      price: "38.99",
       description: "Some text about the product..",
+      rating:4
+
     },
     {
       id: 6,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "green honey",
-      price: "$149.99",
+      price: "149.99",
       description: "Some text about the product..",
+      rating:4
+
     },
     {
       id: 7,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "east honey",
-      price: "$38.99",
+      price: "38.99",
       description: "Some text about the product..",
+      rating:4
+
     },
     {
       id: 8,
       imageurl:
         "https://www.shutterstock.com/image-photo/ideas-gift-honey-packed-small-260nw-1637571250.jpg",
       name: "blue honey",
-      price: "$49.99",
+      price: "49.99",
       description: "Some text about the product..",
+      rating:4
+
     },
   ];
   
